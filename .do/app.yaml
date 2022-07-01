@@ -1,8 +1,8 @@
-name: HD117
+name: hd117
 static_sites:
 - environment_slug: html
   github:
     branch: main
     deploy_on_push: true
     repo: Mark7625/117HD-Website
-  name: HD117
+  name: hd117
