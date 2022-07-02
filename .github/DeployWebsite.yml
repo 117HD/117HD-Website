@@ -1,0 +1,30 @@
+name: 🚧 Publish Website
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Deploying Website
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: |
+            echo 📂 Finding 117HD Directory
+            cd 117HD-Website
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            echo 🗃️ Pulling git Files
+            git pull
+            echo 🗂️ Looking for new Dependencies
+            npm install
+            echo 🔨 Building Website
+            npm run NODE_ENV=production && npm run build
+            echo🔄 Restarting Website
+            pm2 restart site
+            echo ✔️Website Updated
