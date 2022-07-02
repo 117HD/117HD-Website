@@ -11,9 +11,9 @@ jobs:
       - name: 📂 Deploying Website
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          host: ${{ secrets.WEBSITE_HOST }}
+          username: ${{ secrets.WEBSITE_USERNAME }}
+          key: ${{ secrets.WEBSITE_KEY }}
           script: |
             echo 📂 Finding 117HD Directory
             cd 117HD-Website
