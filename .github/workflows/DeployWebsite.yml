@@ -24,7 +24,7 @@ jobs:
             echo 🗂️ Looking for new Dependencies
             npm install
             echo 🔨 Building Website
-            npm run NODE_ENV=production && npm run build
+            NODE_ENV=production && npm run build
             echo🔄 Restarting Website
             pm2 restart site
             echo ✔️Website Updated
