@@ -41,7 +41,15 @@
 }
 
 .navLink {
+    color: white;
+    padding-left: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
 
+.navLink:hover {
+    color: #81e7ff;
+    text-decoration: underline;
 }
 
 .headerLeft {

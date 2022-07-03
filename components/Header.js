@@ -8,7 +8,7 @@ import MobileNavigation from "./MobileNavigation";
 const Header = () => {
     return (
         <div className={styles.headerSection}>
-            <Link href={"/"}><a className={styles.logoImage}><Image alt= "hey" src="/logo.png" width={180} height={63}  ></Image></a></Link>
+            <Link href={"/"}><a className={styles.logoImage}><Image alt= "hey" src="/logo.png" width={110} height={25}  ></Image></a></Link>
             <Navigation/>
             <MobileNavigation/>
         </div>
