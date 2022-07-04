@@ -1,21 +1,16 @@
-const Links = () => {
+const Links = [
+    {
+        url: '/features',
+        name: 'Features'
+    },
+    {
+        url: '/blog',
+        name: 'Blog'
+    },
+    {
+        url: 'https://github.com/RS117/RLHD/blob/master/settings-guide.md',
+        name: 'Settings Guide'
+    }
+];
 
-    return (
-        <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-            <li>Milk</li>
-            <li>Milk</li>
-            <li>Milk</li>
-            <li>Milk</li>
-            <li>Milk</li>
-            <li>Milk</li>
-            <li>Milk</li>
-        </ul>
-
-
-    );
-}
-
-export default Links
+export default Links;

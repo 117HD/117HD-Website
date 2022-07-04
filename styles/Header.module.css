@@ -48,7 +48,7 @@
 }
 
 .navLink:hover {
-    color: #81e7ff;
+    color: #4acdd1;
     text-decoration: underline;
 }
 
@@ -62,7 +62,7 @@
 }
 .buttonRight:hover {
     opacity: 0.7;
-    color: #81e7ff;
+    color: #4acdd1;
 }
 
 .headerRight {

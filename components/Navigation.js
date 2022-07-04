@@ -8,9 +8,9 @@ const Navigation = () => {
     return (
         <>
             <div className={styles.headerLeft}>
-                <Link href={"https://github.com/117HD"}><a className={styles.navLink}>Features</a></Link>
-                <Link href={"https://github.com/117HD"}><a className={styles.navLink}>Blog</a></Link>
-                <Link href={"https://github.com/117HD"}><a className={styles.navLink}>Guide</a></Link>
+                {Links.map(link => (
+                    <Link key={link.url} href={link.url}><a className={styles.navLink}>{link.name}</a></Link>
+                ))}
             </div>
             <div className={styles.headerRight}>
                 <ul className={styles.navbarNav}>
