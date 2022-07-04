@@ -1,6 +1,5 @@
 import Carousel from "nuka-carousel";
 import Feature from "../components/Feature";
-import 'github-markdown-css'
 
 export default function Home(){
 
