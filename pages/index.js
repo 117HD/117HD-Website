@@ -30,11 +30,19 @@ export default function Home(){
                 wrapAround={true}
                 animation={"fade"}
                 autoplay={true}
+                adaptiveHeight={true}
                 autoplayInterval={3000}
                 withoutControls={true}
                 speed={1000}>
-                <img src="/img/gallery/img_1.png" />
-                <img src="/img/gallery/img_2.png" />
+                <img src="/img/slider/img_1.png" />
+                <img src="/img/slider/img_2.png" />
+                <img src="/img/slider/img_3.png" />
+                <img src="/img/slider/img_4.png" />
+                <img src="/img/slider/img_5.png" />
+                <img src="/img/slider/img_6.png" />
+                <img src="/img/slider/img_7.png" />
+                <img src="/img/slider/img_8.png" />
+                <img src="/img/slider/img_9.png" />
             </Carousel>
 
             <section className={"content-section"}>
